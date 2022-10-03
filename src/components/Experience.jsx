@@ -34,13 +34,13 @@ const Experience = () => {
       id: 4,
       src: reactImage,
       title: "React.Js",
-      style: "shadow-blue-600 bg-gray-800 text-cyan-400",
+      style: "shadow-[#00CED1] bg-gray-800 text-[#00CED1]",
     },
     {
       id: 5,
       src: tailwind,
       title: "Tailwind",
-      style: "shadow-sky-400 bg-gray-800 text-blue-300",
+      style: "shadow-[#008B8B] bg-gray-800 text-[#008B8B]",
     },
     {
       id: 6,
@@ -65,28 +65,28 @@ const Experience = () => {
       id: 9,
       src: node,
       title: "Node.Js",
-      style: "shadow-gray-600 bg-gray-800 text-white",
+      style: "shadow-[#7FFF00] bg-gray-800 text-[#7FFF00]",
     },
   ];
 
   return (
     <div
-      name="lenguajes"
-      className="bg-white w-full h-screen mt-20 dark:bg-gray-800 "
+      name="tecnologías"
+      className="bg-gradient-to-b from-white to-[#90EE90] w-full h-full mt-20 dark:dark:bg-gradient-to-t dark:from-gray-400 dark:to-gray-800 "
     >
-      <div className="max-w-screen-lg mx-auto p-4 pt-20 flex flex-col justify-center w-full h-full text-white dark:text-white dark:bg-gray-800">
+      <div className="max-w-screen-lg mx-auto p-4 pt-20 flex flex-col justify-center w-full h-full text-white dark:text-white dark:dark:bg-gradient-to-t dark:from-gray-400 dark:to-gray-800">
         <div>
-          <p className="text-4xl text-gray-700 font-bold border-b-4 border-cyan-300 dark:text-cyan-300 dark:border-white p-2 inline">
-            Lenguajes
+          <p className="text-4xl text-gray-700 font-bold border-b-4 border-[#90EE90] dark:text-cyan-300 dark:border-white inline">
+            Tecnologías
           </p>
-          <p className="py-6">Tecnologias aprendidas</p>
+          <p className="py-10 font-bold text-xl text-gray-700 dark:text-white">Lenguajes y herramientas</p>
         </div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-2 px-12 sm:px-0 dark:bg-gray-800">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-2 px-12 sm:px-0 dark:bg-transparent">
           {techs.map(({ id, src, title, style }) => (
             <div
               key={id}
-              className={`shadow-md hover:opacity-90 hover:bg-black hover:text-xl hover:scale-95 duration-500 py-2 rounded-lg ${style}`}
+              className={`shadow-md hover:opacity-90 hover:bg-black hover:text-xl duration-500 py-2 rounded-lg ${style}`}
             >
               <img src={src} alt="" className="w-12 mx-auto" />
               <p className="mt-4">{title}</p>

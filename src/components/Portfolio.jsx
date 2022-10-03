@@ -23,11 +23,11 @@ const Portfolio = () => {
   return (
     <div
       name="portfolio"
-      className="bg-white w-full text-gray-700 md:h-screen dark:bg-gray-800"
+      className="bg-gradient-to-t from-white to-[#90EE90] w-full text-gray-700 md:h-screen dark:bg-gradient-to-t dark:from-gray-400 dark:to-gray-800"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <p className="text-4xl text-gray-700 font-bold inline border-b-4 border-cyan-300 dark:text-cyan-300 dark:border-white">
+          <p className="text-4xl text-gray-700 font-bold inline border-b-4 border-white dark:text-cyan-300 dark:border-white">
             Portfolio
           </p>
           <p className="py-10 font-bold text-xl dark:text-white">Mis trabajos</p>
