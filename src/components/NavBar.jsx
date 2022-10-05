@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
-import logo from "../assets/Maciel-Negro.png";
+import logo from "../assets/Logopropio.gif";
 import Toogle from "./Toogle";
 
 const NavBar = () => {
