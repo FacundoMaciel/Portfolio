@@ -21,7 +21,7 @@ const Home = () => {
               to="portfolio"
               smooth
               duration={500}
-              className="group text-gray-700 font-bold w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-[#90EE90] to-white cursor-pointer dark:bg-gradient-to-r dark:from-cyan-300 dark:to-gray-400"
+              className="group text-gray-700 font-bold hover:animate-pulse w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-[#90EE90] to-white cursor-pointer dark:bg-gradient-to-r dark:from-cyan-300 dark:to-gray-400"
             >
               Portfolio
               <span className="group-hover:rotate-90 duration-300">

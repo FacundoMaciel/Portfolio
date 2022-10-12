@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
-import logo from "../assets/Logopropio.gif";
+import logo from "../assets/LogoAnime.gif";
 import Toogle from "./Toogle";
 
 const NavBar = () => {
@@ -24,6 +24,10 @@ const NavBar = () => {
       id: 4,
       link: "tecnologías",
     },
+    {
+      id: 5,
+      link: "contacto",
+    },
   ];
 
   return (
@@ -40,7 +44,7 @@ const NavBar = () => {
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="px-4 cursor-pointer bg-transparent capitalize font-bold text-gray-600 dark:text-cyan-300 hover:scale-105 duration-200 hover:border-b-2 hover:border-gray-800 dark:hover:border-cyan-300 hover:rotate-12"
+            className="px-4 cursor-pointer bg-transparent capitalize font-bold text-gray-600 dark:text-cyan-300 hover:scale-105 duration-200 hover:border-b-2 hover:border-gray-800 dark:hover:border-cyan-300 hover:animate-bounce"
           >
             <Link to={link} smooth duration={500}>
               {link}
@@ -82,11 +86,6 @@ const NavBar = () => {
               </Link>
             </li>
           ))}
-          <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
-            <a href="mailto:facundomaciel12@hotmail.com">
-              <button>Contacto</button>
-            </a>
-          </li>
           <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
             <a href="/CVfcm.pdf" download>
               <button>CV</button>

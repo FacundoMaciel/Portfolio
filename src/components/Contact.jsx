@@ -1,53 +1,49 @@
 import React from "react";
-import linkedin from "../assets/linkedin.png";
 
 const Contact = () => {
-
-    const links = [
-        {
-          id: 1,
-          src:linkedin,
-          href: "https://www.linkedin.com/in/facundo-maciel-8843a7241/",
-        },
-        {
-          id: 2,
-          href: "https://github.com/lvlaciel",
-        },
-        {
-          id: 3,
-          src: linkedin,
-          href: "mailto:facundomaciel12@hotmail.com",
-        },
-        {
-          id: 4,
-          href: "/CVfcm.pdf",
-          style: "rounded-br-md",
-          download: true,
-        },
-      ];
-
   return (
     <div
       name="contacto"
-      className="bg-white w-full h-screen mt-20"
+      className="w-full h-full bg-gradient-to-b from-[#90EE90] to-white dark:dark:bg-gradient-to-t dark:from-gray-800 dark:to-transparent text-gray-800 dark:text-cyan-300 dark:border-white"
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
-        <div>
-          <p className="text-4xl text-gray-700 font-bold border-b-4 border-cyan-300 p-2 inline">
-            Contactos
+      <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
+        <div className="pb-8">
+          <p className="text-4xl font-bold inline border-b-4 border-white ">
+           Contactame
           </p>
         </div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
-          {links.map(({ id, src, title, style }) => (
-            <div
-              key={id}
-              className={`shadow-md hover:opacity-90 hover:bg-black hover:text-xl hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
-            >
-              <img src={src} alt="" className="w-12 mx-auto" />
-              <p className="mt-4">{title}</p>
-            </div>
-          ))}
+        <div className=" flex justify-center items-center">
+          <form
+            action="https://getform.io/f/80593fd7-ee8f-4deb-8279-4bcbaee8fde3"
+            method="POST"
+            className=" flex flex-col w-full md:w-1/2"
+          >
+            <input
+              type="text"
+              name="name"
+              required
+              placeholder="Ingresa tu nombre"
+              className="p-2 bg-transparent border-2 border-gray-900 rounded-md text-gray-800 dark:text-white focus:outline-none"
+            />
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="Ingresa tu email"
+              className="my-4 p-2 bg-transparent border-2 border-gray-900 rounded-md text-gray-800 dark:text-white focus:outline-none"
+            />
+            <textarea
+              name="message"
+              placeholder="Escribime un mensaje"
+              rows="10"
+              className="p-2 bg-transparent border-2 border-gray-900 rounded-md text-gray-800 dark:text-white focus:outline-none"
+            ></textarea>
+
+            <button className="text-gray-800 font-bold hover:animate-pulse bg-gradient-to-t from-gray-400 to-[#90EE90] dark:bg-gradient-to-b dark:from-cyan-300 dark:to-gray-400 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
+              Enviar
+            </button>
+          </form>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeContext } from "./ThemeProvider";
-import { BsSun } from 'react-icons/bs';
-import { FiMoon } from 'react-icons/fi';
+import { TiWeatherSunny } from 'react-icons/ti';
+import { TbMoonStars } from 'react-icons/tb';
 
 const Toggle = () => {
   const { theme, setTheme } = React.useContext(ThemeContext);
@@ -13,14 +13,14 @@ const Toggle = () => {
           onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
           className="text-gray-500 dark:text-gray-400 shadow-none p-2 focus:outline-none text-lg rounded-full outline-none ring-transparent cursor-pointer"
         >
-         <FiMoon size={24}/>
+         <TbMoonStars size={24}/>
         </button>
       ) : (
         <button
           onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-          className="text-gray-500 dark:text-gray-400 bg-white focus:outline-none shadow-none p-2 text-lg rounded-full outline-none ring-transparent cursor-pointer"
+          className="text-gray-500 dark:text-gray-400 focus:outline-none shadow-none p-2 text-lg rounded-full outline-none ring-transparent cursor-pointer"
         >
-         <BsSun size={24}/>
+         <TiWeatherSunny size={24}/>
         </button>
       )}
     </div>
