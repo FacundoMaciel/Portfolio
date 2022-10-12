@@ -1,6 +1,11 @@
 import React from "react";
 
 const Contact = () => {
+
+  const handleSubmit = () => {
+    e.target.reset()
+  }
+
   return (
     <div
       name="contacto"
@@ -40,7 +45,9 @@ const Contact = () => {
               className="p-2 bg-transparent border-2 border-gray-900 rounded-md text-gray-800 dark:text-white focus:outline-none"
             ></textarea>
 
-            <button className="text-gray-800 font-bold hover:animate-pulse bg-gradient-to-t from-gray-400 to-[#90EE90] dark:bg-gradient-to-b dark:from-cyan-300 dark:to-gray-400 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
+            <button className="text-gray-800 font-bold hover:animate-pulse bg-gradient-to-t from-gray-400 to-[#90EE90] dark:bg-gradient-to-b dark:from-cyan-300 dark:to-gray-400 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300"
+            onSubmit={handleSubmit}
+            >
               Enviar
             </button>
           </form>
