@@ -47,8 +47,11 @@ const Contact = () => {
               type="text"
               name="name"
               required
+              title="Ingrese un nombre valido por favor"
+              pattern="[A-Za-z ]{2,30}"
+              minLength="2"
               onChange={onChange}
-              placeholder="Ingresa tu nombre"
+              placeholder="Ingresa un nombre valido de 2 a 30 carateres"
               className="p-2 bg-transparent border-2 border-gray-900 rounded-md text-gray-800 dark:text-white focus:outline-none"
             />
             <input
@@ -56,18 +59,21 @@ const Contact = () => {
               name="email"
               required
               onChange={onChange}
-              placeholder="Ingresa tu email"
+              placeholder="Ingresa un email valido"
               className="my-4 p-2 bg-transparent border-2 border-gray-900 rounded-md text-gray-800 dark:text-white focus:outline-none"
             />
             <textarea
               name="message"
               onChange={onChange}
-              placeholder="Escribime un mensaje"
+              placeholder="Escribime un mensaje que tenga como mínimo 4 caracteres"
+              required
+              maxLength="300"
+              minLength="4"
               rows="10"
               className="p-2 bg-transparent border-2 border-gray-900 rounded-md text-gray-800 dark:text-white focus:outline-none"
             ></textarea>
 
-            <button onSubmit={handleSubmit} className="text-gray-800 font-bold hover:animate-pulse bg-gradient-to-t from-gray-400 to-[#90EE90] dark:bg-gradient-to-b dark:from-cyan-300 dark:to-gray-400 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
+            <button type="submit" onSubmit={handleSubmit} className="text-gray-800 font-bold hover:animate-pulse bg-gradient-to-t from-gray-400 to-[#90EE90] dark:bg-gradient-to-b dark:from-cyan-300 dark:to-gray-400 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
               Enviar
             </button>
           </form>
