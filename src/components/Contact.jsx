@@ -2,10 +2,26 @@ import React, { useState } from "react";
 
 const Contact = () => {
 
-// const [input, setInput] = useState('');
+ const [input, setInput] = useState({
+    name: "",
+    email: "",
+    message:"",
+ });
 
-  const handleSubmit = () => {
-    document.getElementById('myform').reset();
+ const onChange = (e) => {
+    setInput({
+      ...input,
+      [e.target.name] : e.target.value
+    })
+ }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setInput({
+      name: "",
+      email: "",
+      message: "",
+    });
   }
 
   return (
@@ -22,15 +38,16 @@ const Contact = () => {
 
         <div className=" flex justify-center items-center">
           <form
-            name="myform"
             action="https://getform.io/f/80593fd7-ee8f-4deb-8279-4bcbaee8fde3"
             method="POST"
             className=" flex flex-col w-full md:w-1/2"
+            
           >
             <input
               type="text"
               name="name"
               required
+              onChange={onChange}
               placeholder="Ingresa tu nombre"
               className="p-2 bg-transparent border-2 border-gray-900 rounded-md text-gray-800 dark:text-white focus:outline-none"
             />
@@ -38,19 +55,19 @@ const Contact = () => {
               type="email"
               name="email"
               required
+              onChange={onChange}
               placeholder="Ingresa tu email"
               className="my-4 p-2 bg-transparent border-2 border-gray-900 rounded-md text-gray-800 dark:text-white focus:outline-none"
             />
             <textarea
               name="message"
+              onChange={onChange}
               placeholder="Escribime un mensaje"
               rows="10"
               className="p-2 bg-transparent border-2 border-gray-900 rounded-md text-gray-800 dark:text-white focus:outline-none"
             ></textarea>
 
-            <button className="text-gray-800 font-bold hover:animate-pulse bg-gradient-to-t from-gray-400 to-[#90EE90] dark:bg-gradient-to-b dark:from-cyan-300 dark:to-gray-400 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300"
-            onSubmit={handleSubmit}
-            >
+            <button onSubmit={handleSubmit} className="text-gray-800 font-bold hover:animate-pulse bg-gradient-to-t from-gray-400 to-[#90EE90] dark:bg-gradient-to-b dark:from-cyan-300 dark:to-gray-400 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
               Enviar
             </button>
           </form>
