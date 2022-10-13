@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Contact = () => {
 
+// const [input, setInput] = useState('');
+
   const handleSubmit = () => {
-    e.target.reset()
+    document.getElementById('myform').reset();
   }
 
   return (
@@ -20,6 +22,7 @@ const Contact = () => {
 
         <div className=" flex justify-center items-center">
           <form
+            name="myform"
             action="https://getform.io/f/80593fd7-ee8f-4deb-8279-4bcbaee8fde3"
             method="POST"
             className=" flex flex-col w-full md:w-1/2"

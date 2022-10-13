@@ -87,7 +87,7 @@ const NavBar = () => {
             </li>
           ))}
           <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
-            <a href="/CVfcm.pdf" download>
+            <a href="/CV-FacundoMacielfoto.pdf" download>
               <button>CV</button>
             </a>
           </li>
