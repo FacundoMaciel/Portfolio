@@ -72,14 +72,14 @@ const Experience = () => {
   return (
     <div
       name="tecnologías"
-      className="bg-gradient-to-b from-white to-[#90EE90] w-full h-full mt-20 dark:dark:bg-gradient-to-t dark:from-gray-400 dark:to-gray-800 "
+      className="bg-gradient-to-b from-gray-400 to-[#5DADE2] w-full h-full mt-20 dark:dark:bg-gradient-to-t dark:from-gray-400 dark:to-gray-800 "
     >
       <div className="max-w-screen-lg mx-auto p-4 pt-20 flex flex-col justify-center w-full h-full text-white dark:text-white dark:dark:bg-gradient-to-t dark:from-gray-400 dark:to-gray-800">
         <div>
-          <p className="text-4xl text-gray-700 font-bold border-b-4 border-[#90EE90] dark:text-cyan-300 dark:border-white inline">
+          <p className="text-4xl text-gray-800 font-bold border-b-4 border-white dark:text-cyan-300 dark:border-white inline">
             Tecnologías
           </p>
-          <p className="py-10 font-bold text-xl text-gray-700 dark:text-white">Lenguajes y herramientas</p>
+          <p className="py-10 font-bold text-xl text-white dark:text-white">Lenguajes y herramientas</p>
         </div>
 
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-2 px-12 sm:px-0 dark:bg-transparent">

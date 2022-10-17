@@ -3,15 +3,15 @@ import MyPicture from "../assets/Facundo-1.png";
 
 const About = () => {
   return (
-    <div name="sobre mi" className="w-full h-screen bg-gradient-to-b from-white to-[#90EE90] text-gray-700 dark:dark:bg-gradient-to-t dark:from-gray-400 dark:to-gray-800">
+    <div name="sobre mi" className="w-full h-screen bg-gradient-to-b from-gray-400 to-[#5DADE2] text-gray-800 dark:dark:bg-gradient-to-t dark:from-gray-400 dark:to-gray-800">
       <div className="max-w-screen-lg p-4 mt-2 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-4">
-          <p className="text-4xl font-bold inline border-b-4 border-[#90EE90] dark:text-cyan-300 dark:border-white">
+          <p className="text-4xl font-bold inline border-b-4 border-white dark:text-cyan-300 dark:border-white">
             Sobre mi
           </p>
         </div>
           
-        <p className="text-sm md:text-2xl mt-5 font-semibold text-gray-700 dark:text-white">
+        <p className="text-sm md:text-2xl mt-5 font-semibold text-white dark:text-white">
           Me fascina la programación, poder crear, innovar, solucionar, seguir
           creciendo en conocimiento, experiencia, lenguajes, herramientas, todo
           para ser un mejor profesional, aportar lo que se pueda al equipo de
