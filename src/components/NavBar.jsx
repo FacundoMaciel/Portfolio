@@ -69,7 +69,7 @@ const NavBar = () => {
       </div>
 
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-white to-[#90EE90] text-gray-800 dark:bg-gradient-to-t dark:from-gray-400 dark:to-gray-800 dark:text-cyan-300 ">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-white to-[#5DADE2] text-gray-800 dark:bg-gradient-to-t dark:from-gray-400 dark:to-gray-800 dark:text-cyan-300 ">
           <Toogle/>
           {links.map(({ id, link }) => (
             <li
