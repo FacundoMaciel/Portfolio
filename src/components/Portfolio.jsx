@@ -1,7 +1,7 @@
 import React from "react";
 import RGBTech from "../assets/RGBTech.png";
 import pifoods from "../assets/foods.png";
-import weatherNative from "../assets/WeatherNative.png"
+import weatherNative from "../assets/weatherNative.png"
 
 
 const Portfolio = () => {
