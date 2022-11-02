@@ -1,6 +1,6 @@
 import React from "react";
 import RGBTech from "../assets/RGBTech.png";
-import pifoods from "../assets/foods.png";
+import pifoods from "../assets/newFoods.png";
 import weatherNative from "../assets/weatherNative.png"
 
 
@@ -15,7 +15,7 @@ const Portfolio = () => {
     {
       id: 2,
       src: pifoods,
-      href: "https://github.com/lvlaciel/Pi-Food",
+      href: "https://pi-food-two.vercel.app/",
       gitHub: "https://github.com/lvlaciel/Pi-Food", 
     },
     {
@@ -45,7 +45,7 @@ const Portfolio = () => {
               <img
                 src={src}
                 alt="Not found"
-                className="rounded-md duration-200 hover:scale-105"
+                className="rounded-md duration-200 hover:scale-105 hover:opacity-80"
               />
               <div className="flex items-center justify-center">
                 <a href={href}

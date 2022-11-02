@@ -6,10 +6,8 @@ import { ThemeProvider } from "./components/ThemeProvider";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ThemeProvider>
-			<body className="bg-gray-400 dark:bg-gray-400">
+    <ThemeProvider >
 				<App />
-			</body>
 		</ThemeProvider>
   </React.StrictMode>
 )
