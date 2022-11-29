@@ -2,6 +2,7 @@ import React from "react";
 import RGBTech from "../assets/RGBTech.png";
 import pifoods from "../assets/newFoods.png";
 import weatherNative from "../assets/weatherNative.png"
+import BsaleShop from "../assets/Bsale.png"
 
 
 const Portfolio = () => {
@@ -23,6 +24,12 @@ const Portfolio = () => {
       src: weatherNative,
       href: "https://www.linkedin.com/feed/update/urn:li:activity:6987775245680062464/",
       gitHub: "https://github.com/lvlaciel/weatherApp", 
+    },
+    {
+      id: 4,
+      src: BsaleShop,
+      href: "https://challenge-bsale-frontend.vercel.app/",
+      gitHub: "https://github.com/lvlaciel/challengeBsale-frontend", 
     },
   ];
 
