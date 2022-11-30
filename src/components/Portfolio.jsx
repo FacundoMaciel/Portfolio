@@ -3,6 +3,7 @@ import RGBTech from "../assets/RGBTech.png";
 import pifoods from "../assets/newFoods.png";
 import weatherNative from "../assets/weatherNative.png"
 import BsaleShop from "../assets/Bsale.png"
+import SabumFit from "../assets/SabumFit.png"
 
 
 const Portfolio = () => {
@@ -30,6 +31,12 @@ const Portfolio = () => {
       src: BsaleShop,
       href: "https://challenge-bsale-frontend.vercel.app/",
       gitHub: "https://github.com/lvlaciel/challengeBsale-frontend", 
+    },
+    {
+      id: 5,
+      src: SabumFit,
+      href: "https://gym-sabum-fit.vercel.app/",
+      gitHub: "https://github.com/lvlaciel/gym_sabumFit", 
     },
   ];
 
