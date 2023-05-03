@@ -40,7 +40,7 @@ const SocialLinks = () => {
           Mi CV <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "/CV.en-FacundoMacielDeveloper.pdf",
+      href: "/CV-MacielFacundo-WebDev.pdf",
       style: "rounded-br-md",
       download: true,
     },
