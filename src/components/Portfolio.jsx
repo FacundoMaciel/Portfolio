@@ -4,6 +4,7 @@ import pifoods from "../assets/newFoods.png";
 import BsaleShop from "../assets/Bsale.png"
 import SabumFit from "../assets/SabumFit.png"
 import Greydive from "../assets/Greydive.png"
+import ReclamosApp from "../assets/ReclamosApp.png"
 
 
 const Portfolio = () => {
@@ -15,20 +16,20 @@ const Portfolio = () => {
       gitHub: "https://github.com/RGBTech-PF/rgbtech",
       name: "RGBTech E-commerce tecnológico"   
     },
-    {
-      id: 2,
-      src: pifoods,
-      href: "https://pi-food-two.vercel.app/",
-      gitHub: "https://github.com/lvlaciel/Pi-Food",
-      name: "Proyecto individual foods-app" 
-    },
-    {
-      id: 4,
-      src: BsaleShop,
-      href: "https://challenge-bsale-frontend.vercel.app/",
-      gitHub: "https://github.com/lvlaciel/challengeBsale-frontend",
-      name: "BsaleShop tienda online" 
-    },
+    // {
+    //   id: 2,
+    //   src: pifoods,
+    //   href: "https://pi-food-two.vercel.app/",
+    //   gitHub: "https://github.com/lvlaciel/Pi-Food",
+    //   name: "Proyecto individual foods-app" 
+    // },
+    // {
+    //   id: 4,
+    //   src: BsaleShop,
+    //   href: "https://challenge-bsale-frontend.vercel.app/",
+    //   gitHub: "https://github.com/lvlaciel/challengeBsale-frontend",
+    //   name: "BsaleShop tienda online" 
+    // },
     {
       id: 5,
       src: SabumFit,
@@ -42,6 +43,13 @@ const Portfolio = () => {
       href: "https://challenge-greydive-alpha.vercel.app/",
       gitHub: "https://github.com/lvlaciel/challenge-Greydive",
       name: "Greydive Form" 
+    },
+    {
+      id: 7,
+      src: ReclamosApp,
+      href: "https://develop--municipalidad-corrientes.netlify.app/",
+      gitHub: "https://gitlab.com/juanmazalazar/municipalidad-corrientes-app",
+      name: "Reclamos App Corrientes" 
     },
   ];
 
