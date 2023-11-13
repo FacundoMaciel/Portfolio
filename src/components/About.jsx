@@ -11,7 +11,7 @@ const About = () => {
           </p>
         </div>
           
-        <p className="text-sm md:text-2xl mt-5 font-semibold text-white dark:text-white">
+        <p className="text-sm md:text-base mt-5 font-semibold text-white dark:text-white">
           Me fascina la programación, poder crear, innovar, solucionar, seguir
           creciendo en conocimiento, experiencia, lenguajes, herramientas, todo
           para ser un mejor profesional, aportar lo que se pueda al equipo de

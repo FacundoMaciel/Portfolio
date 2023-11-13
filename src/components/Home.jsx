@@ -12,7 +12,7 @@ const Home = () => {
             Facundo Maciel
           </h2>
           <p className="text-white py-4 max-w-md font-semibold dark:text-white">
-            Hola! Cómo están? Aprendí en la academia Soy Henry, qué cosas? Que me encanta la programación y lenguajes como JavaScript, React, Redux, PostgreSQL, Express, HTML y CSS.
+          Soy un desarrollador web fullstack graduado del bootcamp Soy Henry, con experiencia en desarrolloweb Front End y Back End con tecnologías como <strong>JavaScript, React, HTML, CSS, NodeJS, NestJS </strong> entre otras. Conocimientos en metodología ágil <strong> SCRUM </strong>
             
           </p>
 

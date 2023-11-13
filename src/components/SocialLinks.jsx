@@ -12,7 +12,7 @@ const SocialLinks = () => {
           LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: "https://www.linkedin.com/in/facundo-maciel-8843a7241/",
+      href: "https://www.linkedin.com/in/facundo-maciel-desarrollador-fullstack/",
       style: "rounded-tr-md",
     },
     {
@@ -22,7 +22,7 @@ const SocialLinks = () => {
           GitHub <FaGithub size={30} />
         </>
       ),
-      href: "https://github.com/lvlaciel",
+      href: "https://github.com/FacundoMaciel",
     },
     {
       id: 3,
@@ -40,7 +40,7 @@ const SocialLinks = () => {
           Mi CV <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "/CV-MacielFacundo-WebDev.pdf",
+      href: "/CV-MacielFacundo-Desarrollador.pdf",
       style: "rounded-br-md",
       download: true,
     },

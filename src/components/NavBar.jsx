@@ -31,9 +31,9 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 text-gray-600 bg-gradient-to-t from-transparent to-[#5DADE2] dark:bg-gradient-to-y dark:shadow-2xl dark:from-transparent dark:to-gray-700 fixed z-50">
+    <div className="flex justify-between items-center w-full h-16 text-gray-600 bg-gradient-to-t from-transparent to-[#5DADE2] dark:bg-gradient-to-y dark:shadow-2xl dark:from-transparent dark:to-gray-700 fixed z-50">
       <Link to="inicio" smooth duration={500}>
-        <div className="w-20 cursor-pointer dark:bg-gray-800">
+        <div className="w-16 cursor-pointer dark:bg-gray-800">
           <img src={logo} alt="logo" />
         </div>
       </Link>
@@ -87,7 +87,7 @@ const NavBar = () => {
             </li>
           ))}
           <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
-            <a href="/CV-MacielFacundo-WebDev.pdf" download>
+            <a href="/CV-MacielFacundo-Desarrollador.pdf" download>
               <button>CV</button>
             </a>
           </li>
